@@ -175,11 +175,23 @@ public class Sombrero{
 			funzionando(capienza, rimanenti, pos, houses, nome, rimanenti);
 		}
 		
+		
 		mostrandoCase(houses);
-		System.out.println("Che il vostro magico anno abbia inizio");
-		/*for int
+		try {
 		java.io.FileWriter fileout = new java.io.FileWriter("Case" + ".txt");
-		fileout.write(houses);*/
+		System.out.println("Che il vostro magico anno abbia inizio");
+		for (int i = 0; i < houses.length;i++){
+			for (int j = 0; j < houses[i].length; j++){
+				for(int k = 0; k <houses[i][j].length(); k++){
+					fileout.write(houses[i][j].charAt(k));
+				}	
+			}
+		}
+		fileout.close();
+		} catch (java.io.IOException e) {
+            System.out.println(e);
+        } 
+		//fileout.write(houses);
     }//main
 
 }//class

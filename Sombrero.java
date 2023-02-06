@@ -176,8 +176,10 @@ public class Sombrero{
 		}
 		
 		mostrandoCase(houses);
+		System.out.println("Che il vostro magico anno abbia inizio");
+		/*for int
 		java.io.FileWriter fileout = new java.io.FileWriter("Case" + ".txt");
-		fileout.write(houses);
+		fileout.write(houses);*/
     }//main
 
 }//class
